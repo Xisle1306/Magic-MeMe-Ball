@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <title>Magic MeMe Ball</title>
+        <style>
+        body {
+           background-image: url("https://archive-media-0.nyafuu.org/wg/image/1502/53/1502534089935.png");
+            background-color: black;
+            padding: 0;
+            margin: 0;
+        }
+        .container{
+            width: 425px;
+            position: relative;
+            margin: 20vh auto;
+        }
+        h1{
+            font-size: 57px;
+            text-align: center;
+            color: blueviolet;
+        }
+        p{
+            font-size: 30px;
+            color: crimson;
+            text-align: center;
+        }
+        textarea{
+            resize: none;
+            width: 400px;
+            height: 100px;
+            display: block;
+            margin: 0 auto;
+        }   
+        button{
+            width: 400px;
+            display: block;
+            margin: 0 auto;
+        }
+        button:hover {
+  background-color:blueviolet;
+  transition: 1.5s;
+}
+             </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Ask a question...</h1>
+            <textarea placeholder="answer"></textarea>
+            <button onclick="answer()">Spørg mig forhælvede</button>
+            <p id="answer"></p>
+        </div>
+        <script>
+        var Answer=[
+            "No u!",
+            "Do u know dee wae?",
+            "Yeeeeet",
+            "Such Yes!",
+            "Such No!",
+            "Yes chef!",
+            "Why u bully me?",
+            "Dat Maybe",
+            "Dat is so SoSad",
+            "Why are u gey?",
+            "Ask da Qweeen",
+            "IDK try using a bomb",
+            "Decoy",
+            "Flashbang",
+            "Ahhh i need help, Here!",
+            "Twitch Prime!",
+            "Fortnite account has been deleted",
+            "Give me da Bomb",
+            "Door STUCK!!!!",
+            "aUTo sNipER",
+            "Snek!",
+            "When ever in doubt, pull out!",
+            "Go A bomb site!",
+            "Go B bomb site!"];
+        function answer(){
+            
+            var random=Answer[Math.floor(Math.random()*Answer.length)];
+        document.getElementById('answer').innerHTML = random;
+        }
+        </script>
+    </body>
+</html>
